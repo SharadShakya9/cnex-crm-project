@@ -29,55 +29,42 @@ export const antdSidebar = css`
     align-items: center;
   }
 
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu {
+  .ant-menu {
     font-size: 16px;
     list-style: none;
     font-weight: 500;
     font-family: "Be Vietnam Pro", sans-serif;
   }
 
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-inline > .ant-menu-item,
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-vertical
-    > .ant-menu-item,
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-inline
-    > .ant-menu-submenu
-    > .ant-menu-submenu-title,
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-vertical
-    > .ant-menu-submenu
-    > .ant-menu-submenu-title {
-    height: 48px;
-    line-height: 24px;
+  .ant-menu-inline > .ant-menu-item,
+  .ant-menu-vertical > .ant-menu-item,
+  .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title,
+  .ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title {
+    height: 48px !important;
+    line-height: 24px !important;
   }
 
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-light .ant-menu-item,
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-light
-    > .ant-menu
-    .ant-menu-item,
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-light
-    .ant-menu-submenu-title,
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-light
-    > .ant-menu
-    .ant-menu-submenu-title {
-    color: #86888a;
+  .ant-menu-light .ant-menu-item,
+  .ant-menu-light > .ant-menu .ant-menu-item,
+  .ant-menu-light .ant-menu-submenu-title,
+  .ant-menu-light > .ant-menu .ant-menu-submenu-title {
+    color: #86888a !important;
   }
 
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-light
-    .ant-menu-item-selected,
-  :where(.css-dev-only-do-not-override-m4timi).ant-menu-light
-    > .ant-menu
-    .ant-menu-item-selected {
-    background-color: #082d4a;
-    color: #D6EBFB;
+  .ant-menu-light .ant-menu-item-selected,
+  .ant-menu-light > .ant-menu .ant-menu-item-selected {
+    background-color: #082d4a !important;
+    color: #d6ebfb !important;
   }
 
   .ant-menu-submenu-selected .ant-menu-submenu-title {
     background: #082d4a;
     border-radius: 0% !important;
-    color: #D6EBFB !important;
+    color: #d6ebfb !important;
 
     &:hover {
       background: #082d4a !important;
-      color: #D6EBFB !important;
+      color: #d6ebfb !important;
     }
   }
 
@@ -95,9 +82,9 @@ export const antdSidebar = css`
   }
 
   .ant-menu-item-selected path {
-    fill: #D6EBFB;
+    fill: #d6ebfb;
   }
   .ant-menu-item-selected circle {
-    fill: #D6EBFB;
+    fill: #d6ebfb;
   }
 `;
