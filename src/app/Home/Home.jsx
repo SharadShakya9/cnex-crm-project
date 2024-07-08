@@ -21,7 +21,7 @@ const Home = () => {
       <div className="border"></div>
 
       <Link className="link" to="/cnex">
-        <button>
+        <button className="continue_btn">
           <div className="text">
             <span>Click</span>
             <span>to</span>
